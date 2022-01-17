@@ -48,6 +48,7 @@ body {
   font-weight: 300;
   color: var(--gray);
   align-items: center;
+  justify-content: center;
   border-bottom: var(--wite);
 }
 
@@ -64,6 +65,14 @@ body {
   backdrop-filter: var(--blur);
   padding: 3px;
   color: var(--gray);
+}
+
+.content-text p {
+  font-weight: 600;
+}
+
+.content-img {
+  padding: 0 5px 0 5px;
 }
 
 .card {
@@ -94,16 +103,31 @@ body {
   padding: 50px;
 }
 
+.padding-top {
+  padding-top: 25px;
+}
+
 .card-text h1 {
   color: var(--textPink);
   margin: 0;
   padding-bottom: 5px;
 }
 
+.card-text h2 {
+  color: var(--gray);
+  font-size: 50px;
+}
+
 .text-card-span {
   font-size: 16px;
   display: block;
   padding-top: 2px;
+}
+
+.text-span {
+  font-weight: 300;
+  color: var(--topPink);
+  font-size: 40px;
 }
 
 .card-text p {
@@ -121,6 +145,10 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
+}
+
+.card-bottom {
+  background-color: var(--circleBlue);
 }
 
 .form {
@@ -145,7 +173,7 @@ body {
   font-size: 18px;
   font-weight: 600;
   font-family: var(--font);
-  color: var(--gray);
+  color: black;
 }
 
 .field input::placeholder {
@@ -211,6 +239,7 @@ body {
     var(--topPink),
     var(--textPink)
   );
+  backdrop-filter: var(--blur);
 }
 
 .circle-blue {
@@ -223,4 +252,5 @@ body {
     var(--circleCyan),
     var(--circlesViolet)
   );
+  backdrop-filter: var(--blur);
 }
