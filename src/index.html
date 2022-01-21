@@ -20,7 +20,6 @@
       <div class="content-text">
         <h1 class="logo-nombre"> Card <span class="logo-bold">Validator</span></h1>
       </div>
-
     </div>
   </header>
 
@@ -39,25 +38,24 @@
 
         </div>
         <div class="card-form" id="page-one">
-          <form action="" class="form">
+          <form action="card.html" class="form">
             <div class="field">
-              <label for="name">Ingresa el nombre del propietario de la tarjeta</label>
-              <input type="text" id="name" placeholder="Nombre y apellidos sin numeros o caracteres especiales">
+              <label for="name" id="name-card">Ingresa el nombre del propietario de la tarjeta</label>
+              <input type="text" id="name" placeholder="Nombre y Apellidos sin números o caracteres especiales">
+              <div id="card-name-alert"></div>
             </div>
             <div class="field">
-              <label for="card_number">Ingresa el número de tarjeta</label>
+              <label for="card_number" id="number-card">Ingresa el número de tarjeta</label>
               <input type="text" id="card_number" placeholder="16 digitos sin espacios o caracteres especiales">
-            </div>
+              <div id="card-number-alert"></div>
+            </>
             <div class="aling-left flex">
-              <button type="submit" class="button">Validar</button>
+              <button type="submit" id="btn" class="button">Validar</button>
             </div>
           </form>
         </div>
       </div>
     </div>
-
-
-
 
   </main>
 

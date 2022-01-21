@@ -5,13 +5,17 @@
   --circlesViolet: #9266cf;
   --circleBlue: #759fd2;
   --circleCyan: #037088;
+  --azulCardOrigin: #5d7ab1;
+  --azulCardBottomAlpha: rgba(93, 122, 177, 0.8);
   --top-Blue: #c1deff;
-  --wite: #ffffff;
+  --white: #ffffff;
   --gray: #706b6c;
+  --green: green;
+  --red: red;
   --light-gray: #cac7c7;
-  --wite-alpha-40: rgba(255, 255, 255, 0.4);
-  --wite-alpha-25: rgba(255, 255, 255, 0.25);
-  --blur: blur(5px);
+  --white-alpha-40: rgba(255, 255, 255, 0.4);
+  --white-alpha-25: rgba(255, 255, 255, 0.25);
+  --blur: blur(10px);
   --font: 'Montserrat', sans-serif;
 }
 
@@ -37,7 +41,7 @@ body {
 }
 
 .bar {
-  background-color: var(--wite-alpha-25);
+  background-color: var(--white-alpha-25);
   backdrop-filter: var(--blur);
   padding: 2px 0;
 }
@@ -49,7 +53,7 @@ body {
   color: var(--gray);
   align-items: center;
   justify-content: center;
-  border-bottom: var(--wite);
+  border-bottom: var(--white);
 }
 
 .logo-nombre {
@@ -61,7 +65,7 @@ body {
 }
 
 .footer {
-  background-color: var(--wite-alpha-25);
+  background-color: var(--white-alpha-25);
   backdrop-filter: var(--blur);
   padding: 3px;
   color: var(--gray);
@@ -87,12 +91,13 @@ body {
 }
 
 .card-content {
-  background-color: var(--wite-alpha-40);
+  background-color: var(--white-alpha-40);
+  backdrop-filter: var(--blur);
+  border: 1px solid rgba(255, 255, 255, 0.25);
   width: 700px;
   height: 450px;
   border-radius: 25px;
   margin: 35px;
-  backdrop-filter: var(--blur);
 }
 
 .card-text {
@@ -100,7 +105,15 @@ body {
   font-weight: 600;
   font-style: normal;
   text-align: center;
-  padding: 50px;
+  padding: 30px;
+}
+
+.green {
+  color: var(--green);
+}
+
+.red {
+  color: var(--red);
 }
 
 .padding-top {
@@ -113,18 +126,21 @@ body {
   padding-bottom: 5px;
 }
 
-.card-text h2 {
+.card-chip-text h2 {
   color: var(--gray);
   font-size: 50px;
+  margin-bottom: 30px;
 }
 
-.text-card-span {
+.card-chip-text {
+  font-family: var(--font);
   font-size: 16px;
   display: block;
   padding-top: 2px;
+  text-align: center;
 }
 
-.text-span {
+.text-span-card {
   font-weight: 300;
   color: var(--topPink);
   font-size: 40px;
@@ -145,10 +161,6 @@ body {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-}
-
-.card-bottom {
-  background-color: var(--circleBlue);
 }
 
 .form {
@@ -173,7 +185,7 @@ body {
   font-size: 18px;
   font-weight: 600;
   font-family: var(--font);
-  color: black;
+  color: var(--gray);
 }
 
 .field input::placeholder {
@@ -194,22 +206,34 @@ body {
   width: 120px;
   font-family: var(--font);
   font-weight: 300;
-  color: black;
+  font-size: 18px;
+  color: var(--white);
+
   background-image: linear-gradient(
+    to top left,
+    var(--circleBlue),
+    var(--circlesViolet)
+  );
+  /*background-image: linear-gradient(
     to bottom right,
     var(--textPink),
     var(--top-Blue)
-  );
+  );*/
   /* text-transform: lowercase; */
   box-shadow: 4px 4px 3px var(--bottomLilac);
   /* transition: background-image 0.6s ease-in-out;  */
 }
 
 .button:hover {
-  background-image: linear-gradient(
+  /*background-image: linear-gradient(
     to top left,
     var(--circleBlue),
     var(--circlesViolet)
+  );*/
+  background-image: linear-gradient(
+    to bottom right,
+    var(--topPink),
+    var(--circleBlue)
   );
   color: white;
 }
@@ -226,6 +250,7 @@ body {
   border-radius: 50%;
   position: absolute;
   z-index: -1;
+  opacity: 0.7;
 }
 
 .circle-pink {
@@ -253,4 +278,92 @@ body {
     var(--circlesViolet)
   );
   backdrop-filter: var(--blur);
+}
+
+.card-up {
+  width: 700px;
+  height: 55%;
+}
+
+.card-bottom {
+  width: 700px;
+  height: 45%;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: var(--azulCardBottomAlpha);
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.card-number-text {
+  width: 90%;
+  margin: 0 20px;
+  font-family: var(--font);
+  color: var(--gray);
+  font-weight: 600;
+}
+
+#cardNumber {
+  font-size: 40px;
+}
+
+.img-chip {
+  margin: 0 30px;
+}
+
+.card-chip-logo {
+  justify-content: space-between;
+}
+
+#cardName {
+  text-align: center;
+  color: var(--white);
+  font-family: var(--font);
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 105px 35px;
+}
+
+.card-mastercard-logo {
+  margin: 80px 35px;
+}
+
+.validAlert {
+  position: relative;
+}
+
+.isvalid {
+  background-color: var(--green);
+  color: var(--white);
+  font-family: var(--font);
+  width: 50%;
+  height: 10%;
+  text-align: center;
+  line-height: 10px;
+  position: absolute;
+  bottom: 180px;
+  left: 165px;
+}
+
+.isinvalid h3 {
+  font-weight: 300;
+}
+
+.isvalid h3 {
+  font-weight: 300;
+}
+
+.isinvalid {
+  background-color: var(--red);
+  color: var(--white);
+  font-family: var(--font);
+  width: 50%;
+  height: 10%;
+  text-align: center;
+  line-height: 10px;
+  position: absolute;
+  bottom: 180px;
+  left: 165px;
 }
