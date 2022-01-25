@@ -6,18 +6,18 @@ if (document.querySelector('#name')) {
     e.preventDefault();
     let cardName = document.querySelector('#name').value;
     let cardNumber = document.querySelector('#card_number').value;
-    console.log(cardName, cardNumber);
+    //console.log(cardName, cardNumber);
 
     let cardNumberAlert = document.querySelector('#card-number-alert');
     let cardNameAlert = document.querySelector('#card-name-alert');
 
     if (regExpName.test(cardName)) {
-      let correctName = cardName;
+      //let correctName = cardName;
       cardNameAlert.classList.remove('red');
       cardNameAlert.innerHTML = ``;
       localStorage.setItem('nameCard', cardName);
 
-      console.log(correctName);
+      // console.log(correctName);
     } else {
       cardNameAlert.innerHTML = `<p>nombre que ingresaste es inválido</p>`;
       cardNameAlert.classList.add('red');
@@ -25,7 +25,7 @@ if (document.querySelector('#name')) {
 
     if (regExpNumber.test(cardNumber)) {
       //validamos que la entrada del usuario sea valida conla ER
-      let correctNumber = cardNumber; //guarda en correctNumber el numero que ingreso el usuario
+      //let correctNumber = cardNumber; //guarda en correctNumber el numero que ingreso el usuario
       cardNumberAlert.classList.remove('red');
       cardNumberAlert.innerHTML = ``;
       localStorage.setItem('numberCard', cardNumber);
@@ -41,7 +41,7 @@ if (document.querySelector('#name')) {
 } else {
   let localNumber = localStorage.getItem('numberCard');
   let isvalid = validator.isValid(localNumber);
-  console.log(isvalid);
+  //console.log(isvalid);
 
   let validAlert = document.querySelector('#isValidAlert');
 
@@ -60,7 +60,7 @@ if (document.querySelector('#name')) {
     localStorage.getItem('nameCard');
 
   document.querySelector('#cardNumber').innerHTML = maskify;
-  console.log(maskify);
+  //console.log(maskify);
   localStorage.clear();
 }
 

@@ -8,14 +8,14 @@ const validator = {
       flagB,
       suma = 0; //definimos vaiables auxiliares
     let valid = false;
-    console.log('entrada del usuario' + creditCardNumber);
+    //console.log('entrada del usuario' + creditCardNumber);
     let array = creditCardNumber.split(''); // convertimos en arreglo el string del usuario
-    console.log('Array' + array);
+    //console.log('Array' + array);
     for (let i = creditCardNumber.length - 1; i >= 0; i--) {
       //recorre el arreglo desde el ultimo valor al primero
       num.push(array[i]); //creamos el arreglo invertido
     }
-    console.log(num);
+    //console.log(num);
     for (let i = 0; i < num.length; i++) {
       //recorre el arreglo y hace las multiplicaciones
       if (i % 2) {
@@ -32,11 +32,11 @@ const validator = {
       } else {
         cardconvert.push(parseInt(num[i]));
       }
-      console.log(cardconvert);
-      console.log(5);
+      //console.log(cardconvert);
+      //console.log(5);
 
       suma = suma + cardconvert[i];
-      console.log(suma);
+      //console.log(suma);
     }
     if (suma >= 0 && suma <= 999) {
       suma % 10 === 0 ? (valid = true) : (valid = false);
@@ -47,7 +47,7 @@ const validator = {
     let creditNumber = creditCardNumber.split('');
     let array = [];
     let res;
-    console.log(creditCardNumber);
+    //console.log(creditCardNumber);
 
     for (let i = 0; i < creditNumber.length; i++) {
       if (i >= 0 && i < creditNumber.length - 4) {
