@@ -1,10 +1,10 @@
 <h1 align='center'>Tarjeta de crédito válida </h1>
 
 <p align="center">
-<img src=" https://img.shields.io/badge/Credit_Card_Validation-Paulette_Villegas-pink?style=for-the-badge"/> 
+<img src="https://img.shields.io/badge/Credit_Card_Validation-Paulette_Villegas-pink?style=for-the-badge"/> 
 </p>
 
-![Texto alternativo](img/validator.png)
+![](img/Validator.png)
 
 <p align="center">
   <img src="https://img.shields.io/badge/HTML-F16529?style=for-the-badge&logo=html5&logoColor=white"/>&nbsp
