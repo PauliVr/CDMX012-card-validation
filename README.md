@@ -1,7 +1,7 @@
 <h1 align='center'>Tarjeta de crédito válida </h1>
 
 <p align="center">
-<img src=" https://img.shields.io/badge/Credit_Card_Validation-Paulette_Villegas-pink?style=for-the-badge&logo=computer"/> </p>
+<img src=" https://img.shields.io/badge/Paulette_Villegas-pink?style=for-the-badge&logo=computer"/> </p>
 
 ![Texto alternativo](img/validator.png)
 
@@ -57,20 +57,19 @@ Para lograr que el prototipo fuera claro y funcional seguí los siguientes pasos
 
 ![PrototipoBajaFidelidad](img/vistaFinal.png)
 
-+ **Probar**: Las pruebas se generaron mientras se le daba funcionalidad al sistema y como complemento se le pidió a un usuario probar la interfaz y poder observar el flujo de trabajo con ella, obteniendo un buen resultado de usabilidad.
+- **Probar**: Las pruebas se generaron mientras se le daba funcionalidad al sistema y como complemento se le pidió a un usuario probar la interfaz y poder observar el flujo de trabajo con ella, obteniendo un buen resultado de usabilidad.
 
-+ **Feedback**: al tener avanzado el sistema se realizó una Demo en la que la única mejora que se debía hacer era en cambiar el color del botón para que fuera más visible, lo cual fue implementado de manera inmediata. 
-
+- **Feedback**: al tener avanzado el sistema se realizó una Demo en la que la única mejora que se debía hacer era en cambiar el color del botón para que fuera más visible, lo cual fue implementado de manera inmediata.
 
 ---
+
 # Prototipo final
 
-### UI 
+### UI
 
-Para hacer el diseño UI del sistema seguí una tendencia de diseño llamado Glassmorphism el cual juega con figuras, degradados y transparencias para simular un cristal, decidí utilizar esta tendencia ya que siento que me permitió plasmar un poco de mi personalidad en el proyecto. 
+Para hacer el diseño UI del sistema seguí una tendencia de diseño llamado Glassmorphism el cual juega con figuras, degradados y transparencias para simular un cristal, decidí utilizar esta tendencia ya que siento que me permitió plasmar un poco de mi personalidad en el proyecto.
 
 ![PrototipoBajaFidelidad](img/Validator.png)
-
 
 ---
 
@@ -83,9 +82,10 @@ Para hacer el diseño UI del sistema seguí una tendencia de diseño llamado Gla
 ⌨ Box model\
 ⌨ Posicionamiento con Flexbox\
 ⌨ Variables \
-⌨ Posicionamiento absoluto y relativo 
+⌨ Posicionamiento absoluto y relativo
 
 ### JAVASCRIPT
+
 🖥 Uso de funciones\
 🖥 Manipulacion dinámica del DOM \
 🖥 Selectores y eventos del DOM\
@@ -96,8 +96,8 @@ Para hacer el diseño UI del sistema seguí una tendencia de diseño llamado Gla
 🖥 Uso de datos primitivos
 
 ### EXTRAS
+
 💻 Uso de pruebas unitarias\
 💻 Conceptos de UI/UX\
 💻 Uso de Git y GitHub\
 💻 Markdown
-
