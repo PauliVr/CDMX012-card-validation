@@ -1,7 +1,7 @@
 <h1 align='center'>Tarjeta de crédito válida </h1>
 
 <p align="center">
-<img src=" https://img.shields.io/badge/Credit_Card_Validation-Paulette_Villegas-pink?style=for-the-badge&logo=computer"/> 
+<img src=" https://img.shields.io/badge/Credit_Card_Validation-Paulette_Villegas-pink?style=for-the-badge"/> 
 </p>
 
 ![Texto alternativo](img/validator.png)
