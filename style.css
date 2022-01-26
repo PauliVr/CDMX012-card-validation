@@ -1,0 +1,382 @@
+:root {
+  --topPink: #fb96af;
+  --bottomLilac: #d5b6e9;
+  --textPink: #f3b5cc;
+  --circlesViolet: #9266cf;
+  --circleBlue: #759fd2;
+  --circleCyan: #037088;
+  --azulCardOrigin: #5d7ab1;
+  --azulCardBottomAlpha: rgba(93, 122, 177, 0.8);
+  --top-Blue: #c1deff;
+  --white: #ffffff;
+  --gray: #706b6c;
+  --green: #557c55;
+  --red: #ff6363;
+  --green-alpha: rgba(85, 124, 85, 0.8);
+  --red-alpha: rgba(255, 99, 99, 0.8);
+  --light-gray: #cac7c7;
+  --white-alpha-40: rgba(255, 255, 255, 0.4);
+  --white-alpha-25: rgba(255, 255, 255, 0.25);
+  --blur: blur(10px);
+  --font: 'Montserrat', sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: linear-gradient(
+    to bottom right,
+    var(--top-Blue),
+    var(--bottomLilac),
+    var(--topPink)
+  );
+  background-repeat: no-repeat;
+  margin: 0;
+}
+
+.bar {
+  background-color: var(--white-alpha-25);
+  backdrop-filter: var(--blur);
+  padding: 2px 0;
+}
+
+.content {
+  text-align: center;
+  font-family: var(--font);
+  font-weight: 300;
+  color: var(--gray);
+  align-items: center;
+  justify-content: center;
+  border-bottom: var(--white);
+}
+
+.logo-nombre {
+  font-weight: 300;
+}
+
+.logo-bold {
+  font-weight: 700;
+}
+
+.footer {
+  background-color: var(--white-alpha-25);
+  backdrop-filter: var(--blur);
+  padding: 3px;
+  color: var(--gray);
+}
+
+.content-text p {
+  font-weight: 600;
+}
+
+.content-img {
+  padding: 0 5px 0 5px;
+}
+
+.card {
+  height: calc(100vh - 88px - 95px);
+  margin-top: 20px;
+  margin-bottom: 20px;
+  /* height: auto; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.card-content {
+  background-color: var(--white-alpha-40);
+  backdrop-filter: var(--blur);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  width: 700px;
+  height: 450px;
+  border-radius: 25px;
+  margin: 35px;
+}
+
+.card-text {
+  font-family: var(--font);
+  font-weight: 600;
+  font-style: normal;
+  text-align: center;
+  padding: 30px;
+}
+
+.green {
+  color: var(--green);
+}
+
+.red {
+  color: var(--red);
+}
+
+.padding-top {
+  padding-top: 25px;
+}
+
+.margin {
+  margin: -10px 15px;
+}
+
+.card-text h1 {
+  color: var(--textPink);
+  margin: 0;
+  padding-bottom: 5px;
+}
+
+.card-chip-text h2 {
+  color: var(--gray);
+  font-size: 50px;
+  margin-bottom: 30px;
+}
+
+.card-chip-text {
+  font-family: var(--font);
+  font-size: 16px;
+  display: block;
+  padding-top: 2px;
+  text-align: center;
+}
+
+.text-span-card {
+  font-weight: 300;
+  color: var(--topPink);
+  font-size: 40px;
+}
+
+.card-text p {
+  font-size: 20px;
+  margin: 4px 0 0 0;
+  padding: 0;
+  font-weight: 600;
+  color: var(--gray);
+}
+
+.card-form {
+  font-family: var(--font);
+  font-weight: 300;
+  width: 62%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.form {
+  width: 100%;
+}
+
+.field label {
+  display: block;
+  padding: 5px 0;
+  font-size: 18px;
+}
+
+.field input {
+  display: block;
+  padding: 5px 10px;
+  width: 100%;
+  border-radius: 20px;
+  height: 40px;
+  border: none;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 1px var(--light-gray);
+  font-size: 18px;
+  font-weight: 600;
+  font-family: var(--font);
+  color: var(--gray);
+}
+
+.field input::placeholder {
+  color: var(--topPink);
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.field-button {
+  padding-left: 100;
+}
+
+.button {
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  height: 35px;
+  width: 120px;
+  font-family: var(--font);
+  font-weight: 300;
+  font-size: 18px;
+  color: var(--white);
+
+  background-image: linear-gradient(
+    to top left,
+    var(--circleBlue),
+    var(--circlesViolet)
+  );
+  /*background-image: linear-gradient(
+    to bottom right,
+    var(--textPink),
+    var(--top-Blue)
+  );*/
+  /* text-transform: lowercase; */
+  box-shadow: 4px 4px 3px var(--bottomLilac);
+  /* transition: background-image 0.6s ease-in-out;  */
+}
+
+.button:hover {
+  /*background-image: linear-gradient(
+    to top left,
+    var(--circleBlue),
+    var(--circlesViolet)
+  );*/
+  background-image: linear-gradient(
+    to bottom right,
+    var(--topPink),
+    var(--circleBlue)
+  );
+  color: white;
+}
+
+.flex {
+  display: flex;
+}
+
+.aling-left {
+  justify-content: flex-end;
+}
+
+.circle {
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  opacity: 0.5;
+}
+
+.circle-pink {
+  width: 900px;
+  height: 900px;
+  background-color: var(--topPink);
+  top: -120px;
+  left: -190px;
+  background: -webkit-radial-gradient(
+    top right,
+    var(--topPink),
+    var(--textPink)
+  );
+  backdrop-filter: var(--blur);
+  position: fixed;
+}
+
+.circle-blue {
+  bottom: 30px;
+  right: 10px;
+  width: 700px;
+  height: 700px;
+  background: -webkit-radial-gradient(
+    top right,
+    var(--circleCyan),
+    var(--circlesViolet)
+  );
+  backdrop-filter: var(--blur);
+  position: fixed;
+}
+
+.card-up {
+  width: 700px;
+  height: 55%;
+}
+
+.card-bottom {
+  width: 700px;
+  height: 45%;
+  border-bottom-right-radius: 25px;
+  border-bottom-left-radius: 25px;
+  background-color: var(--azulCardBottomAlpha);
+  padding: 0;
+  margin: 0;
+  justify-content: space-between;
+}
+
+.card-number-text {
+  width: 90%;
+  margin: 0 20px;
+  font-family: var(--font);
+  color: var(--gray);
+  font-weight: 600;
+}
+
+#cardNumber {
+  font-size: 40px;
+}
+
+.img-chip {
+  margin: 0 30px;
+}
+
+.card-chip-logo {
+  justify-content: space-between;
+}
+
+#cardName {
+  text-align: center;
+  color: var(--white);
+  font-family: var(--font);
+  font-size: 28px;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: 105px 35px;
+}
+
+.card-mastercard-logo {
+  margin: 80px 35px;
+}
+
+.validAlert {
+  position: relative;
+}
+
+.isvalid {
+  background-color: var(--green-alpha);
+  border-color: var(--green);
+  color: var(--white);
+  font-family: var(--font);
+  width: 50%;
+  text-align: center;
+  line-height: 10px;
+  position: absolute;
+  bottom: 180px;
+  left: 165px;
+  border-radius: 5px;
+  border-style: solid;
+}
+
+.isinvalid h3 {
+  font-weight: 600;
+}
+
+.isvalid h3 {
+  font-weight: 600;
+}
+
+.isinvalid {
+  background-color: var(--red-alpha);
+  border-color: var(--red);
+  border-style: solid;
+  border-width: 2px;
+  color: var(--white);
+  font-family: var(--font);
+  width: 50%;
+  text-align: center;
+  line-height: 10px;
+  position: absolute;
+  bottom: 180px;
+  left: 165px;
+  border-radius: 5px;
+}
