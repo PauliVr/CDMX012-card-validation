@@ -13,25 +13,25 @@ if (document.querySelector('#name')) {
 
     if (regExpName.test(cardName)) {
       //let correctName = cardName;
-      cardNameAlert.classList.remove('red');
+      cardNameAlert.classList.remove('red', 'margin');
       cardNameAlert.innerHTML = ``;
       localStorage.setItem('nameCard', cardName);
 
       // console.log(correctName);
     } else {
       cardNameAlert.innerHTML = `<p>nombre que ingresaste es inválido</p>`;
-      cardNameAlert.classList.add('red');
+      cardNameAlert.classList.add('red', 'margin');
     }
 
     if (regExpNumber.test(cardNumber)) {
       //validamos que la entrada del usuario sea valida conla ER
       //let correctNumber = cardNumber; //guarda en correctNumber el numero que ingreso el usuario
-      cardNumberAlert.classList.remove('red');
+      cardNumberAlert.classList.remove('red', 'margin');
       cardNumberAlert.innerHTML = ``;
       localStorage.setItem('numberCard', cardNumber);
     } else {
       cardNumberAlert.innerHTML = `<p> el numero de tarjeta es inválido </p>`;
-      cardNumberAlert.classList.add('red');
+      cardNumberAlert.classList.add('red', 'margin');
     }
 
     if (regExpName.test(cardName) && regExpNumber.test(cardNumber)) {
