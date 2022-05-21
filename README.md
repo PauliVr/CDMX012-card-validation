@@ -14,7 +14,7 @@
 
 Credit Card Validation es un sistema web que le permite a un usuario validar un número de tarjeta de acuerdo al algoritmo de Luhn, el cual por medio de una serie de operaciones matemáticas valida si dicho número de tarjeta es válido o no.
 
-### Usuario
+fire
 
 Para este proyecto el principal usuario es cualquier persona que por medio del algoritmo de luhn quiera validar un número de tarjeta, como sabemos este algoritmo permite validar números de identificación como:
 
@@ -34,11 +34,12 @@ Este sistema web soluciona la validación de la tarjeta por medio de una interfa
 Para realizar dicho sistema se llevó a cabo un prototipo de baja fidelidad con el que se buscaba:
 
 - Brindarle al usuario una interfaz fácil de comprender
-- Un flujo de pantallas optimo y coherente +Un prototipo que pudiera ser iterable y creativo
+- Un flujo de pantallas optimo y coherente 
+- Un prototipo que pudiera ser iterable y creativo
 
 Para lograr que el prototipo fuera claro y funcional seguí los siguientes pasos con un usuario:
 
-- **Empatizar**: consistió en una plática de aproximadamente 15 con un usuario el cual me platico un poco de cómo le gustaría que fuera el proceso de validar la tarjeta y gráficamente la interfaz
+- **Empatizar**: consistió en una plática de aproximadamente 15min con un usuario el cual me platico un poco de cómo le gustaría que fuera el proceso de validar la tarjeta y gráficamente la interfaz
 
 - **Definir**: Con la información brindada por el usuario se definió un moodboard visual para la UI del sistema y se enlisto cada cosa que podría ir en el sistema.
 
