@@ -14,7 +14,8 @@
 
 Credit Card Validation es un sistema web que le permite a un usuario validar un número de tarjeta de acuerdo al algoritmo de Luhn, el cual por medio de una serie de operaciones matemáticas valida si dicho número de tarjeta es válido o no.
 
-fire
+
+
 
 Para este proyecto el principal usuario es cualquier persona que por medio del algoritmo de luhn quiera validar un número de tarjeta, como sabemos este algoritmo permite validar números de identificación como:
 
